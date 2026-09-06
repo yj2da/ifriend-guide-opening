@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: Pretendard, 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  }
+}
+
+/* Summer Beach Palette Variables */
+:root {
+  --beach-sand: #fef8ee;
+  --beach-sand-dark: #f6ebd8;
+  --beach-sky: #6bc5f8;
+  --beach-ocean: #38bdf8;
+  --beach-deep: #0284c7;
+  --beach-orange: #ff5722;
+  --beach-coral: #ff7043;
+}
+
+/* Wavy divider animations */
+@keyframes wave-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-wave-float {
+  animation: wave-float 3s ease-in-out infinite;
+}
+
+/* Palm leaf / Starfish gentle rotation */
+@keyframes star-spin {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(6deg) scale(1.05); }
+}
+
+.animate-star {
+  animation: star-spin 4s ease-in-out infinite;
+}
+
+/* Hide scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
