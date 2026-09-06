@@ -41,7 +41,7 @@ export const QRModal: React.FC<QRModalProps> = ({ isOpen, onClose, currentLang }
         {/* QR Code Image Container */}
         <div className="p-4 bg-white rounded-2xl border-2 border-dashed border-sky-300 mb-3 relative group shadow-xs">
           <img
-            src={`${import.meta.env.BASE_URL}qr-guide.png`}
+            src={`${import.meta.env.BASE_URL}qr-guide.jpeg`}
             alt="Guidebook QR Code"
             className="w-52 h-52 object-contain rounded-xl"
           />
